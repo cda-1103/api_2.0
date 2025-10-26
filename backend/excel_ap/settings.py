@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'data_uploader',
-    'products',
 ]
 
 MIDDLEWARE = [

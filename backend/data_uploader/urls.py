@@ -1,9 +1,8 @@
 
 from django.urls import path
-from backend.data_uploader.views import UploadDataExcel
-from backend.data_uploader.products.products import GetHeaders
+from .views import  upload_products, GetHeaders
 
 urlpatterns = [
-    path('productos/', UploadDataExcel.as_view(), name='cargar_productos'),
-    path('get_headers/', GetHeaders.as_view(), name='obtener_headers'),
-]
+    path('productos/', upload_products.as_view(), name='cargar_productos'),
+    path('get_headers/', GetHeaders.as_view(), name='obtener_cabeceras'),
+] 
